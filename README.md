@@ -1,7 +1,9 @@
-For this project, I built a Story Management System using Spring Boot. I directly connected the application to a database server by configuring the data source and using Hibernate as the ORM framework.
+For this project, I built an AI-powered Email Reply Generator with a React frontend and a Java Spring Boot backend.
 
-I used Spring Web to build RESTful APIs that allow clients to create, read, update, and delete stories. For database interaction, I leveraged Spring Data JPA, which is built on top of Hibernate. This allowed me to simplify data access and reduce boilerplate code while still taking advantage of Hibernate’s full capabilities.
+The application takes two inputs from the user: the original email content and a selected tone for the reply—like Formal, Casual, or Friendly.
 
-I created a Story class and annotated it as an @Entity, mapping it directly to a database table. I also implemented a JPA repository to handle data operations like saving and retrieving stories.
+On the backend, I created a Spring Boot controller to receive these inputs via a REST API. A dedicated service class then builds a prompt and sends a request to the Gemini AI model using Spring’s WebClient. The AI processes the input and returns a smart, tone-matched email reply.
 
-Through this project, I gained solid hands-on experience with Hibernate, JPA, and REST API development, and I’m confident in my ability to build scalable, database-driven backend systems.
+On the frontend, I used React along with Material UI for a clean and responsive interface. I used Axios to handle the API requests, sending the email content and tone to the backend and displaying the generated reply.
+
+This project helped me strengthen my skills in full-stack development, especially in API integration, React UI design, and connecting AI services with real-world applications.
