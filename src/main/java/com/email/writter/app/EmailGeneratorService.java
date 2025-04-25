@@ -16,7 +16,7 @@ public class EmailGeneratorService {
     private String geminiApiUrl;
     @Value("${gemini.api.key}")
     private String geminiApiKey;
-
+    private String dailyUpdate = "04/25/2025";
     private final WebClient webClient;
 
     public EmailGeneratorService(WebClient.Builder webClientBuilder) {
